@@ -1,0 +1,67 @@
+/***
+Bootstrap4 Card with Tabs by @mdeuerlein
+***/
+
+body {
+background-color: #15232c;
+}
+
+
+.card {
+    background-color: #15232c;
+    border: 1px solid rgba(0, 34, 51, 0.1);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+    .title{
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      font-family: open sans, sans-serif;
+    }
+}
+
+/* Tabs Card */
+
+.tab-card {
+  border:1px solid #eee;
+}
+
+.tab-card-header {
+  background:none;
+  padding-bottom: 0px;
+}
+/* Default mode */
+.tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid transparent;
+  margin-right: 0;
+  color: #737373;
+  padding: 2px 15px;
+  font-size: 12px;
+}
+
+.tab-card-header > .nav-tabs > li > a.show {
+    border-bottom:2px solid #007bff;
+    color: #007bff;
+}
+.tab-card-header > .nav-tabs > li > a:hover {
+    color: #007bff;
+}
+
+.tab-card-header > .tab-content {
+  padding-bottom: 0;
+}
+.balance{
+  border: 1px solid black;
+  border-radius: 0;
+  .balance-content{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,86 @@
+{
+    "menu":{
+        "account":{
+            "title":"Select Account",
+            "new-account":"New Account",
+            "import-account":"Import Account",
+            "ledger-nano-s":"Ledger Nano S",
+            "etherscan-address":"Etherscan Address",
+            "export-private-key":"Export Private Key",
+            "forget-account":"Forget Account",
+            "gas-price":"Gas Price"
+        },
+        "contract":{
+            "title":"Smart Contract",
+            "connection":"Connection",
+            "etherscan-contract": "Etherscan Contract",
+            "smart-contract-overview": "Smart Contract Overview"
+        },
+        "faqs":"FAQs",
+        "help":{
+            "title":"Help",
+            "beginner-guide":"Beginner's Guide",
+            "connect-to-etherum-screencast":"Connect to Ethereum Screencast",
+            "deposit-screencast":"Deposit Screencast",
+            "withdraw-screencast":"Withdraw Screencast",
+            "order-screencast":"Order Screencast",
+            "cancel-screencast":"Cancel Screencast",
+            "trade-screencast":"Trade Screencast",
+            "fees":"Fees",
+            "ask-the-community":"Ask the comnunity"
+        },
+        "tokens":"Tokens",
+        "language": "English"
+    },
+    "main":{
+        "modal":{
+            "balance":{
+                "title":"Balance",
+                "deposit":"Deposit",
+                "withdraw":"Withdraw",
+                "transfer":"Transfer",
+                "token":"Token",
+                "wallet":"Wallet",
+                "amount":"Amount",
+                "address":"Address",
+                "forkdelta":"ForkDelta"
+
+            },
+            "volume":"Volume",
+            "order-book":{
+                "title":"Order Book"
+            },
+            "new-order":{
+                "title":"New Order",
+                "buy":"Buy",
+                "sell":"Sell",
+                "amount-to-buy":"Amount to buy",
+                "price":"Price",
+                "total":"Total",
+                "expires":"Expires"
+            },
+            "price-chart":{
+                "title":"Price Chart",
+                "price":"Price",
+                "depth":"Depth"
+            },
+            "my-transactions":{
+                "title":"My Transactions",
+                "important":"Important",
+                "trades":{
+                    "title":"Trades",
+                    "transaction":"Transaction",
+                    "type":"Type"
+                },
+                "orders":{
+                    "title":"Orders",
+                    "availabel-volume":"Availabel Volume",
+                    "expires-in":"Expires In",
+                    "cancel":"Cancel"
+                }
+            },
+            "trades":"Trades"
+
+        }
+    }
+}

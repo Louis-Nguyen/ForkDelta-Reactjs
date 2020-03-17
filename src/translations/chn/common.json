@@ -1,0 +1,85 @@
+{
+    "menu":{
+        "account":{
+            "title":"选择帐号",
+            "new-account":"新账号",
+            "import-account":"导入账号",
+            "ledger-nano-s":"Ledger Nano S",
+            "etherscan-address":"Etherscan 地址",
+            "export-private-key":"导出私钥",
+            "forget-account":"忘记账号",
+            "gas-price":"燃气价格"
+        },
+        "contract":{
+            "title":"智能合约",
+            "connection":"连接",
+            "etherscan-contract": "Etherscan 合约",
+            "smart-contract-overview": "智能合约概述"
+        },
+        "faqs":"FAQs",
+        "help":{
+            "title":"救命",
+            "beginner-guide":"初学者指南",
+            "connect-to-etherum-screencast":"连接以太坊截屏",
+            "deposit-screencast":"存款截屏",
+            "withdraw-screencast":"退出截屏",
+            "order-screencast":"订单截屏",
+            "cancel-screencast":"取消截屏",
+            "trade-screencast":"贸易截屏",
+            "fees":"费用",
+            "ask-the-community":"询问社区"
+        },
+        "tokens":"币种",
+        "language": "中文"
+    },
+    "main":{
+        "modal":{
+            "balance":{
+                "title":"",
+                "deposit":"",
+                "withdraw":"",
+                "transfer":"",
+                "token":"",
+                "wallet":"",
+                "amount":"",
+                "address":""
+
+            },
+            "volume":"",
+            "order-book":{
+                "title":""
+            },
+            "new-order":{
+                "title":"",
+                "buy":"",
+                "sell":"",
+                "amount-to-buy":"",
+                "price":"",
+                "total":"",
+                "expires":""
+            },
+            "price-chart":{
+                "title":"",
+                "price":"",
+                "depth":""
+            },
+            "my-transactions":{
+                "title":"",
+                "important":"",
+                "trades":{
+                    "title":"",
+                    "transaction":"",
+                    "type":""
+                },
+                "orders":{
+                    "title":"",
+                    "availabel-volume":"",
+                    "expires-in":"",
+                    "cancel":""
+                }
+            },
+            "trades":""
+
+        }
+    }
+}

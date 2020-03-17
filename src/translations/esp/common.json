@@ -1,0 +1,85 @@
+{
+    "menu":{
+        "account":{
+            "title":"Seleccionar cuenta",
+            "new-account":"Nueva cuenta",
+            "import-account":"Importar la cuenta",
+            "ledger-nano-s":"Ledger Nano S",
+            "etherscan-address":"Direccion Etherscan",
+            "export-private-key":"Exportar la clave privada",
+            "forget-account":"Olvidar la cuenta",
+            "gas-price":"Precio del gas"
+        },
+        "contract":{
+            "title":"Contrato inteligente",
+            "connection":"Conexión",
+            "etherscan-contract": "Contrato Etherscan",
+            "smart-contract-overview": "Descripción general del contrato inteligente"
+        },
+        "faqs":"FAQs",
+        "help":{
+            "title":"Ayuda",
+            "beginner-guide":"Guía para principiantes",
+            "connect-to-etherum-screencast":"Conéctese a Ethereum Screencast",
+            "deposit-screencast":"Depósito Screencast",
+            "withdraw-screencast":"Retirar Screencast",
+            "order-screencast":"Orden Screencast",
+            "cancel-screencast":"Cancelar Screencast",
+            "trade-screencast":"Trade Screencast",
+            "fees":"Tarifa",
+            "ask-the-community":"Pregunta a la comunidad"
+        },
+        "tokens":"Fichas",
+        "language": "Español"
+    },
+    "main":{
+        "modal":{
+            "balance":{
+                "title":"",
+                "deposit":"",
+                "withdraw":"",
+                "transfer":"",
+                "token":"",
+                "wallet":"",
+                "amount":"",
+                "address":""
+
+            },
+            "volume":"",
+            "order-book":{
+                "title":""
+            },
+            "new-order":{
+                "title":"",
+                "buy":"",
+                "sell":"",
+                "amount-to-buy":"",
+                "price":"",
+                "total":"",
+                "expires":""
+            },
+            "price-chart":{
+                "title":"",
+                "price":"",
+                "depth":""
+            },
+            "my-transactions":{
+                "title":"",
+                "important":"",
+                "trades":{
+                    "title":"",
+                    "transaction":"",
+                    "type":""
+                },
+                "orders":{
+                    "title":"",
+                    "availabel-volume":"",
+                    "expires-in":"",
+                    "cancel":""
+                }
+            },
+            "trades":""
+
+        }
+    }
+}

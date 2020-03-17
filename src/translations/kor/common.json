@@ -1,0 +1,86 @@
+{
+    "menu":{
+        "account":{
+            "title":"계정 선택",
+            "new-account":"새 계정",
+            "import-account":"계정 가져 오기",
+            "ledger-nano-s":"Ledger Nano S",
+            "etherscan-address":"Etherscan 주소",
+            "export-private-key":"개인 키 내보내기",
+            "forget-account":"계정 분실",
+            "gas-price":"가스 가격"
+        },
+        "contract":{
+            "title":"스마트 계약",
+            "connection":"연결",
+            "etherscan-contract": "Etherscan 계약",
+            "smart-contract-overview": "스마트 계약 개요"
+        },
+        "faqs":"FAQs",
+        "help":{
+            "title":"도움",
+            "beginner-guide":"초보자 안내서",
+            "connect-to-etherum-screencast":"이더 리움 스크린 캐스트에 연결",
+            "deposit-screencast":"예금 스크린 캐스트",
+            "withdraw-screencast":"스크린 캐스트 철회",
+            "order-screencast":"스크린 캐스트 주문",
+            "cancel-screencast":"스크린 캐스트 취소",
+            "trade-screencast":"무역 스크린 캐스트",
+            "fees":"수수료",
+            "ask-the-community":"공동체에게 물어보세요"
+        },
+        "tokens":"토큰",
+        "language": "한국어"
+    },
+    "main":{
+        "modal":{
+            "balance":{
+                "title":"",
+                "deposit":"",
+                "withdraw":"",
+                "transfer":"",
+                "token":"",
+                "wallet":"",
+                "amount":"",
+                "address":"",
+                "forkdelta":""
+
+            },
+            "volume":"",
+            "order-book":{
+                "title":""
+            },
+            "new-order":{
+                "title":"",
+                "buy":"",
+                "sell":"",
+                "amount-to-buy":"",
+                "price":"",
+                "total":"",
+                "expires":""
+            },
+            "price-chart":{
+                "title":"",
+                "price":"",
+                "depth":""
+            },
+            "my-transactions":{
+                "title":"",
+                "important":"",
+                "trades":{
+                    "title":"",
+                    "transaction":"",
+                    "type":""
+                },
+                "orders":{
+                    "title":"",
+                    "availabel-volume":"",
+                    "expires-in":"",
+                    "cancel":""
+                }
+            },
+            "trades":""
+
+        }
+    }
+}
