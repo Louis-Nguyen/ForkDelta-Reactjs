@@ -35,50 +35,70 @@
     "main":{
         "modal":{
             "balance":{
-                "title":"",
-                "deposit":"",
-                "withdraw":"",
-                "transfer":"",
-                "token":"",
-                "wallet":"",
-                "amount":"",
-                "address":""
+                "title":"Solde",
+                "deposit":"Dépot",
+                "withdraw":"Retrait",
+                "transfer":"Transfert",
+                "token":"Jeton",
+                "wallet":"Portefeuille",
+                "amount":"Montant",
+                "address":"Adresse",
+                "forkdelta":"ForkDelta"
 
             },
-            "volume":"",
+            "volume":{
+                "title":"Volume"
+            },
             "order-book":{
-                "title":""
+                "title":"Carnet D'ordres"
             },
             "new-order":{
-                "title":"",
-                "buy":"",
-                "sell":"",
-                "amount-to-buy":"",
-                "price":"",
-                "total":"",
-                "expires":""
+                "title":"Passer Un Ordre",
+                "buy":"Achat",
+                "sell":"Vente",
+                "amount-to-buy":"Montant d'achat",
+                "amount-to-sell":"Montant à vendre",
+                "price":"Prix",
+                "total":"Total",
+                "expires":"Expires"
             },
             "price-chart":{
-                "title":"",
-                "price":"",
-                "depth":""
+                "title":"Tableau Des Prix",
+                "price":"Prix",
+                "depth":"Profondeur"
             },
             "my-transactions":{
-                "title":"",
-                "important":"",
+                "title":"Mes Transactions",
+                "DAI":"DAI",
+                "ETH":"ETH",
+                "DAI/ETH":"DAI/ETH",
+                "important":"Important",
                 "trades":{
-                    "title":"",
-                    "transaction":"",
-                    "type":""
+                    "title":"Trades",
+                    "transaction":"Transaction",
+                    "type":"Tipo"
                 },
                 "orders":{
-                    "title":"",
-                    "availabel-volume":"",
-                    "expires-in":"",
-                    "cancel":""
+                    "title":"Ordres",
+                    "availabel-volume":"Volume disponible",
+                    "expires-in":"Expire dans",
+                    "cancel":"Annuler"
+                },
+                "funds":{
+                    "title":"Funds",
+                    "transaction":"Transaction",
+                    "type":"Tipo"
                 }
             },
-            "trades":""
+            "trades":{
+                "title":"Trades",
+                "DAI":"DAI",
+                "DAI/ETH":"DAI/ETH",
+                "ETH":"ETH"
+            },
+            "updates":{
+                "title":"Tweets by ‎@ForkDelta"
+            }
 
         }
     }

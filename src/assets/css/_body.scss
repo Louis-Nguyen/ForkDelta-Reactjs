@@ -1,67 +1,130 @@
 /***
 Bootstrap4 Card with Tabs by @mdeuerlein
 ***/
-
-body {
-background-color: #15232c;
+@mixin card-body{
+  color: #ffffff;
+  font-size: 12px;
+  border: 2px solid #15232c;
+  border-radius: 0;
+}
+@mixin scroll-custom($height){
+  max-height: $height;
+  overflow-y: auto;
 }
 
+.body-custom{
+  padding-right: 2px ;
+  padding-left: 5px ;
+}
 
 .card {
-    background-color: #15232c;
-    border: 1px solid rgba(0, 34, 51, 0.1);
-    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
-    .title{
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 16px;
-      font-family: open sans, sans-serif;
-    }
+  margin-top: 0px !important;
+  background-color: #15232c;
+  border: 1px solid rgba(0, 34, 51, 0.1);
+  box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+
+ 
 }
 
+.title-body {
+  margin-top: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: open sans, sans-serif;
+  text-transform: capitalize;
+  background-color: #212529;
+}
 /* Tabs Card */
 
 .tab-card {
-  border:1px solid #eee;
+  border:  2px solid #212529;
 }
 
 .tab-card-header {
-  background:none;
+  background: none;
   padding-bottom: 0px;
 }
+
 /* Default mode */
-.tab-card-header > .nav-tabs {
+.tab-card-header>.nav-tabs {
   border: none;
   margin: 0px;
 }
-.tab-card-header > .nav-tabs > li {
+
+.tab-card-header>.nav-tabs>li {
   margin-right: 2px;
 }
-.tab-card-header > .nav-tabs > li > a {
+
+.tab-card-header>.nav-tabs>li>a {
   border: 0;
-  border-bottom:2px solid transparent;
+  border-bottom: 2px solid transparent;
   margin-right: 0;
   color: #737373;
   padding: 2px 15px;
   font-size: 12px;
 }
 
-.tab-card-header > .nav-tabs > li > a.show {
-    border-bottom:2px solid #007bff;
-    color: #007bff;
-}
-.tab-card-header > .nav-tabs > li > a:hover {
-    color: #007bff;
+.tab-card-header>.nav-tabs>li>a.show {
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
 }
 
-.tab-card-header > .tab-content {
+.tab-card-header>.nav-tabs>li>a:hover {
+  color: #007bff;
+}
+.tab-card-header>.nav-tabs>li>a:active {
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+.tab-card-header>.tab-content {
   padding-bottom: 0;
 }
-.balance{
-  border: 1px solid black;
-  border-radius: 0;
-  .balance-content{
-    max-height: 250px;
-    overflow-y: auto;
+
+.balance {
+  @include card-body;
+  .balance-content {
+    @include scroll-custom(260px);
   }
+}
+
+
+ .volume{
+  @include card-body;
+  @include scroll-custom(285px);
+   cursor: pointer;
+   .title-volume{
+     font-weight: bold;
+     &:hover{
+       text-decoration: underline;
+     }
+   }
+  
+ }
+ .orderbook{
+  @include card-body;
+  @include scroll-custom(300px);
+ }
+
+ .new-order {
+  @include card-body;
+  .new-order-content {
+    @include scroll-custom(275px);
+  }
+}
+
+.price-chart{
+  min-height: 70px;
+  max-height: 300px;
+}
+
+.important-transactions{
+  @include card-body;
+  @include scroll-custom(250px);
+}
+
+.updates{
+  @include card-body;
+  @include scroll-custom(310px);
 }

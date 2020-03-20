@@ -46,7 +46,9 @@
                 "forkdelta":"ForkDelta"
 
             },
-            "volume":"Volume",
+            "volume":{
+                "title":"Volume"
+            },
             "order-book":{
                 "title":"Order Book"
             },
@@ -55,6 +57,7 @@
                 "buy":"Buy",
                 "sell":"Sell",
                 "amount-to-buy":"Amount to buy",
+                "amount-to-sell":"Amount to sell",
                 "price":"Price",
                 "total":"Total",
                 "expires":"Expires"
@@ -66,6 +69,9 @@
             },
             "my-transactions":{
                 "title":"My Transactions",
+                "DAI":"DAI",
+                "ETH":"ETH",
+                "DAI/ETH":"DAI/ETH",
                 "important":"Important",
                 "trades":{
                     "title":"Trades",
@@ -77,9 +83,22 @@
                     "availabel-volume":"Availabel Volume",
                     "expires-in":"Expires In",
                     "cancel":"Cancel"
+                },
+                "funds":{
+                    "title":"Funds",
+                    "transaction":"Transaction",
+                    "type":"Type"
                 }
             },
-            "trades":"Trades"
+            "trades":{
+                "title":"Trades",
+                "DAI":"DAI",
+                "DAI/ETH":"DAI/ETH",
+                "ETH":"ETH"
+            },
+            "updates":{
+                "title":"Tweets by ‎@ForkDelta"
+            }
 
         }
     }

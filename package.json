@@ -58,6 +58,7 @@
     "react-bootstrap": "^0.32.4",
     "react-bootstrap4-modal": "^1.7.4",
     "react-dom": "^16.8.4",
+    "react-google-charts": "^3.0.15",
     "react-i18next": "^11.3.3",
     "react-loader-spinner": "^2.3.0",
     "react-notifications": "^1.4.3",

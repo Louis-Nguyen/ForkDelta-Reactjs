@@ -28,7 +28,6 @@ export default class ImportAccount extends Component {
         this.setState({
             showError: true
         })
-        
     }
     else{
         var data ={};
@@ -66,7 +65,7 @@ export default class ImportAccount extends Component {
                             Import Account
               </button>
                     </div>
-              <ModalCommon showError={this.state.showError} modalTitle="Error" modalBody="The specified address is invalid." modalFooter="OK"/>
+              <ModalCommon onHide={() => this.setState({showError:!this.state.showError})} show={this.state.showError} modalTitle="Error" modalBody="The specified address is invalid." modalFooter="OK"/>
           </Modal>
         )
     }

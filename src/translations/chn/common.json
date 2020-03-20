@@ -35,50 +35,70 @@
     "main":{
         "modal":{
             "balance":{
-                "title":"",
-                "deposit":"",
-                "withdraw":"",
-                "transfer":"",
-                "token":"",
-                "wallet":"",
-                "amount":"",
-                "address":""
+                "title":"余额",
+                "deposit":"充值",
+                "withdraw":"提取",
+                "transfer":"转移",
+                "token":"转移",
+                "wallet":"钱包",
+                "amount":"数量",
+                "address":"地址",
+                "forkdelta":"ForkDelta"
 
             },
-            "volume":"",
+            "volume":{
+                "title":"交易量"
+            },
             "order-book":{
-                "title":""
+                "title":"订单簿"
             },
             "new-order":{
-                "title":"",
-                "buy":"",
-                "sell":"",
-                "amount-to-buy":"",
-                "price":"",
-                "total":"",
-                "expires":""
+                "title":"新订单",
+                "buy":"买",
+                "sell":"卖",
+                "amount-to-buy":"买入量",
+                "amount-to-sell":"卖出量",
+                "price":"价格",
+                "total":"总量",
+                "expires":"到期区块数量"
             },
             "price-chart":{
-                "title":"",
-                "price":"",
-                "depth":""
+                "title":"图表",
+                "price":"价格",
+                "depth":"深度"
             },
             "my-transactions":{
-                "title":"",
-                "important":"",
+                "title":"我的交易",
+                "DAI":"DAI",
+                "ETH":"ETH",
+                "DAI/ETH":"DAI/ETH",
+                "important":"重要",
                 "trades":{
-                    "title":"",
-                    "transaction":"",
-                    "type":""
+                    "title":"交易",
+                    "transaction":"交易",
+                    "type":"类型"
                 },
                 "orders":{
-                    "title":"",
-                    "availabel-volume":"",
-                    "expires-in":"",
-                    "cancel":""
+                    "title":"订单",
+                    "availabel-volume":"量",
+                    "expires-in":"到期块数",
+                    "cancel":"取消"
+                },
+                "funds":{
+                    "title":"资金",
+                    "transaction":"交易",
+                    "type":"类型"
                 }
             },
-            "trades":""
+            "trades":{
+                "title":"交易",
+                "DAI":"DAI",
+                "DAI/ETH":"DAI/ETH",
+                "ETH":"ETH"
+            },
+            "updates":{
+                "title":"Tweets by ‎@ForkDelta"
+            }
 
         }
     }

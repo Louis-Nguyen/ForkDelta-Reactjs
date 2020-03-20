@@ -35,51 +35,70 @@
     "main":{
         "modal":{
             "balance":{
-                "title":"",
-                "deposit":"",
-                "withdraw":"",
-                "transfer":"",
-                "token":"",
-                "wallet":"",
-                "amount":"",
-                "address":"",
-                "forkdelta":""
+                "title":"잔고",
+                "deposit":"입금",
+                "withdraw":"출금",
+                "transfer":"전송",
+                "token":"토큰",
+                "wallet":"지갑",
+                "amount":"수량",
+                "address":"주소",
+                "forkdelta":"ForkDelta"
 
             },
-            "volume":"",
+            "volume":{
+                "title":"거래량"
+            },
             "order-book":{
-                "title":""
+                "title":"주문현황"
             },
             "new-order":{
-                "title":"",
-                "buy":"",
-                "sell":"",
-                "amount-to-buy":"",
-                "price":"",
-                "total":"",
-                "expires":""
+                "title":"새로운 주문",
+                "buy":"매수",
+                "sell":"매도",
+                "amount-to-buy":"매수 수량",
+                "amount-to-sell":"매도 수량",
+                "price":"가격",
+                "total":"총합",
+                "expires":"만료"
             },
             "price-chart":{
-                "title":"",
-                "price":"",
-                "depth":""
+                "title":"가격 챠트",
+                "price":"가격",
+                "depth":"깊이"
             },
             "my-transactions":{
-                "title":"",
-                "important":"",
+                "title":"내 트랜잭션",
+                "DAI":"DAI",
+                "ETH":"ETH",
+                "DAI/ETH":"DAI/ETH",
+                "important":"중대한",
                 "trades":{
-                    "title":"",
-                    "transaction":"",
-                    "type":""
+                    "title":"거래",
+                    "transaction":"트랜잭션",
+                    "type":"종류"
                 },
                 "orders":{
-                    "title":"",
-                    "availabel-volume":"",
-                    "expires-in":"",
-                    "cancel":""
+                    "title":"주문",
+                    "availabel-volume":"가능한 볼륨",
+                    "expires-in":"만료까지 남은 블럭의 수",
+                    "cancel":"취소"
+                },
+                "funds":{
+                    "title":"자금",
+                    "transaction":"트랜잭션",
+                    "type":"종류"
                 }
             },
-            "trades":""
+            "trades":{
+                "title":"거래",
+                "DAI":"DAI",
+                "DAI/ETH":"DAI/ETH",
+                "ETH":"ETH"
+            },
+            "updates":{
+                "title":"Tweets by ‎@ForkDelta"
+            }
 
         }
     }

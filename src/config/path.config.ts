@@ -1,4 +1,4 @@
-export const root =  "https://localhost:44363/api";
+export const root =  "https://localhost:44366/api";
 
 export const PathConfig =({
     get_ALL_TOKENS: {

@@ -2,3 +2,42 @@
 @import 'body';
 @import 'footer';
 @import 'responsive';
+
+.scroll-bar-custom{
+    &::-webkit-scrollbar{
+        width: 6px;
+        background-color: #c1c1c1;
+    }
+   &::-webkit-scrollbar-thumb{
+    background-color:#1e2b34;
+    &:hover{
+        background-color:#404a52;
+    }
+   }
+  } 
+ .button-common{
+    border-radius: 1px;
+    background-color: #3d84d6;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 13px;
+ }
+ .input-dark {
+    width: 100%;
+    height: 36px;
+    padding: 8px 5px 8px 10px;
+    border: 1px solid #565f66;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    background-color: #404a52;
+    font-family: open sans, sans-serif;
+    &:focus{
+      background-color: #404a52 ;
+      color: #ffffff;
+    }
+  }

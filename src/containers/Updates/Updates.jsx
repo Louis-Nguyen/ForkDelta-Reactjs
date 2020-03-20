@@ -1,29 +1,30 @@
 import React, { Component } from 'react'
+import UpdateFakeData from './UpdateFakeData.json'
+import { withTranslation, useTranslation } from 'react-i18next';
+class Updates extends Component {
 
-export default class Updates extends Component {
     render() {
+        const { t, i18n } = this.props;
+        let renderUpdateFake = UpdateFakeData.map((item, index) => {
+            return (<tr key={index} >
+              <td style={{fontSize:'14px', fontWeight:'bold'}}>{item.Name}</td>
+            <td>{item.content}</td>
+            </tr>)
+        });
         return (
-            <div className="card mt-3 tab-card">
-            <div className="card-header tab-card-header">
-            <div className="">Updates</div>
-                <ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                    <li className="nav-item">
-                        <a className="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">Important</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false">Twitter</a>
-                    </li>
-                </ul>
-            </div>
-            <div className="tab-content" id="myTabContent">
-                <div className="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
-                   
-                </div>
-                <div className="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
-                  
+            <div>
+                <div className="title-body">&nbsp;&nbsp;&nbsp;{t('main.modal.updates.title')}
+                        </div>
+                <div className="table-responsive updates scroll-bar-custom">
+                    <table className="table table-hover table-dark">
+                        <tbody >
+                            {renderUpdateFake}
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </div>
+
         )
     }
 }
+export default withTranslation('common')(Updates)

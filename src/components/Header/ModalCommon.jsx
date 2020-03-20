@@ -4,26 +4,22 @@ export default class ModalCommon extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showError: false
         }
     }
     onCancelForm = () => {
-        this.setState({
-            showError: false
-        })
+        this.props.onHide();
     }
-    componentWillReceiveProps(nextProps) {
-        // You don't have to do this check first, but it can help prevent an unneeded render
-        if (nextProps.showError !== this.state.showError) {
-          this.setState({ showError: true });
-        }
-      }
-
+    // componentWillReceiveProps(nextProps) {
+    //     // You don't have to do this check first, but it can help prevent an unneeded render
+    //     if (nextProps.showError !== this.state.showError) {
+    //       this.setState({ showError: true });
+    //     }
+    //   }
     render() {
         return (
-            <Modal visible={this.state.showError}  >
+            <Modal visible={this.props.show}  >
                 <div className="modal-header">
-                    <h5 className="modal-title"><i class="fas fa-times-circle"></i>&nbsp;{this.props.modalTitle}</h5>
+                    <h5 className="modal-title"><i className="fas fa-times-circle"></i>&nbsp;{this.props.modalTitle}</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={()=>this.onCancelForm()}>
                         <span aria-hidden="true">×</span>
                     </button>

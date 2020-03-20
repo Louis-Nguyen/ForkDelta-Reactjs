@@ -6,6 +6,7 @@ import { withTranslation, useTranslation } from 'react-i18next';
 import Account from "./Account/Account"
 import Help from './Help/Help';
 import Contract from './Contract/Contract';
+
 @observer
 class Navbar extends Component {
 
@@ -34,10 +35,10 @@ class Navbar extends Component {
         let showInfoTokens = "";
         let showTokens = "";
         showInfoTokens = HeaderStore.AllTokens.map((item, index) => {
-            return <li className="dropdown-item" onClick={() => this.onClickTokens(item)}><a ><span><b>{item.name.trim()}</b>&nbsp;&nbsp;{item.fullName.trim()}</span></a></li>
+            return <li key={index} className="dropdown-item" onClick={() => this.onClickTokens(item)}><a ><span><b>{item.name.trim()}</b>&nbsp;&nbsp;{item.fullName.trim()}</span></a></li>
         });
         showTokens = HeaderStore.AllTokens.map((item, index) => {
-            return <li className="dropdown-item" onClick={() => this.onClickTokens(item)}><a ><span><b>{item.name.trim()}</b></span></a></li>
+            return <li key={index} className="dropdown-item" onClick={() => this.onClickTokens(item)}><a ><span><b>{item.name.trim()}</b></span></a></li>
         });
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,7 +51,7 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto dropdown">
                             <a className="dropdown-toggle title-token" data-toggle="dropdown">{this.state.token.name == "" ? HeaderStore.DefaultToken.name : this.state.token.name}</a>
-                            <ul className="dropdown-menu list-group-dropdown" id="infotoken">
+                            <ul className="dropdown-menu list-group-dropdown scroll-bar-custom" id="infotoken">
                                 {showInfoTokens}
                             </ul>
                     </ul>
@@ -60,7 +61,7 @@ class Navbar extends Component {
                             <Help />
                             <li className="nav-left dropdown">
                                 <a className=" dropdown-toggle nav-item nav-link" data-toggle="dropdown"><i className="fa fa-coins"></i><span >{t('menu.tokens')}</span></a>
-                                    <ul className="dropdown-menu list-group-dropdown" id="tokens">
+                                    <ul className="dropdown-menu list-group-dropdown scroll-bar-custom" id="tokens">
                                         {showTokens}
                                     </ul>
                             </li>

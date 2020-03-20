@@ -78,3 +78,21 @@
     max-height: 300px;
     overflow-y: auto;
 }
+.badge-1{
+    border-radius: 5px;
+    background-color: #2f3d45;
+    color: white;
+    padding: 2px;
+    margin-right: 2px;
+    font-size: 9px;
+}
+.badge-2{
+    border-radius: 5px;
+    background-color: #4da53c;
+    color: white;
+    padding: 2px;
+    font-size: 9px;
+}
+.my-dropdown-toggle::after {
+     content: none;
+}

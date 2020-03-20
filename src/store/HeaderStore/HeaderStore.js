@@ -12,6 +12,7 @@ class HeaderStore {
     }
     constructor(){
     }
+
     handleErrors(response) {
         if (!response.ok) {
             throw Error(response.statusText);
@@ -48,8 +49,9 @@ class HeaderStore {
                response => {
                 response.json();
                 if (response.status == 200) {
+                    sessionStorage.setItem("user",JSON.stringify(data));
                     MyNotification.alertSuccess("Create Account success!");
-                    
+                    window.location.reload();
                   }
                   else{
                     MyNotification.alertError("Error create Account !")
@@ -57,8 +59,6 @@ class HeaderStore {
                }
           )
           .then(data => {
-            console.log(data);
-            sessionStorage.setItem("user",JSON.stringify(data));
           })
           .catch(error => {
               MyNotification.alertError("Error save Account !")
